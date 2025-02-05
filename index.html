@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"  class="theme-light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <style>
+        .formular-container {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+    <div class="formular-container is-flex is-justify-content-center is-align-items-center">
+        <form action="https://formsubmit.co/tosi07001@utb.vaxjo.se" name="formular" id="formular" method="post">
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn" required><br>
+            <label for="epost">E-postadress</label>
+            <input type="email" id="email" name="epost"><br>
+            <label for="meddelande">Varför ska du komma in?</label><br>
+            <textarea name="meddelande" id="meddelande" class="p-1"></textarea><br>
+            <input type="submit" name="Skicka" id="skicka" value="Skicka" class="mt-2">
+        </form>
+    </div>
+</body>
+</html>
