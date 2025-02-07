@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee468be318.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <style>
-        .formular-container {
-            height: 100vh;
-            width: 100vw;
-        }
-    </style>
-    <div class="formular-container is-flex is-justify-content-center is-align-items-center">
-        <form action="https://formsubmit.co/tosi07001@utb.vaxjo.se" name="formular" id="formular" method="post">
-            <label for="namn">Namn:</label>
-            <input type="text" id="namn" name="namn" required><br>
+    <div>
+        <form  class="formular-container" name="formular" id="formular" method="post">
+            <label for="namn">Namn</label>
+            <input type="text" id="namn" name="namn" class="input is-primary"><br>
             <label for="epost">E-postadress</label>
-            <input type="email" id="email" name="epost"><br>
+            <input type="email" id="email" name="epost" class="input is-primary"><br>
             <label for="meddelande">Varför ska du komma in?</label><br>
-            <textarea name="meddelande" id="meddelande" class="p-1"></textarea><br>
-            <input type="submit" name="Skicka" id="skicka" value="Skicka" class="mt-2">
+            <textarea name="meddelande" id="meddelande" class="textarea p-1 is-primary"></textarea><br>
         </form>
+        <a href="home.html" ><button id="button" class="button is-primary is-outlined is-large">Skicka</button></a>
+        <i class="fa-solid fa-moon fas fa-4x fa-pull-left" id="måne" onclick="Togglem()"></i>
+        <i class="fa-solid fa-sun fas fa-4x fa-pull-left" id="sol" onclick="Toggles()"></i>
     </div>
 </body>
 </html>
