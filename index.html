@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  class="theme-light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +10,19 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div>
-        <form  class="formular-container" name="formular" id="formular" method="post">
+    <div class="columns is-multiline ">
+        <form  class="formular-container column is-one-third" name="formular" id="formular" method="get" action="home.html">
             <label for="namn">Namn</label>
-            <input type="text" id="namn" name="namn" class="input is-primary"><br>
+            <input type="text" id="namn" name="namn" class="input is-primary column"><br>
             <label for="epost">E-postadress</label>
-            <input type="email" id="email" name="epost" class="input is-primary"><br>
+            <input type="email" id="email" name="epost" class="input is-primary column"><br>
             <label for="meddelande">Varför ska du komma in?</label><br>
-            <textarea name="meddelande" id="meddelande" class="textarea p-1 is-primary"></textarea><br>
-        </form>
-        <a href="home.html" ><button id="button" class="button is-primary is-outlined is-large">Skicka</button></a>
+            <textarea name="meddelande" id="meddelande" class="textarea p-1 is-primary column"></textarea><br>
+            <a href="home.html"><button id="button" class="button is-primary is-outlined is-large column">Skicka</button></a>
+        </form> 
+        
         <i class="fa-solid fa-moon fas fa-4x fa-pull-left" id="måne" onclick="Togglem()"></i>
-        <i class="fa-solid fa-sun fas fa-4x fa-pull-left" id="sol" onclick="Toggles()"></i>
+        <i class="fa-solid fa-sun fas fa-4x fa-pull-left" id="sol" onclick="Toggles()"></i> 
     </div>
 </body>
 </html>
