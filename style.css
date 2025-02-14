@@ -1,6 +1,6 @@
 body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .formular-container{
@@ -9,16 +9,10 @@ body{
 }
 
 #måne{
-    padding: 30px;
     position: fixed;
 }
 
 #sol{
     display: none;
-    padding: 30px;
     position: fixed;
-}
-
-#button{
-    
 }
