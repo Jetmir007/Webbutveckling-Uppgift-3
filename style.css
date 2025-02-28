@@ -9,10 +9,5 @@ body{
 }
 
 #måne{
-    position: fixed;
-}
-
-#sol{
     display: none;
-    position: fixed;
 }
