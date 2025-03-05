@@ -11,3 +11,12 @@ function Toggles(){
     document.getElementById('måne').style.display = "block"
     document.getElementById('sol').style.display = "none"
 }
+
+//Spel
+
+let point = 0;
+
+function Clicker(){
+    point++
+    document.getElementById("score").innerHTML = "Score: " + point
+}

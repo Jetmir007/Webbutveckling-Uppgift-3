@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <!--   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="my-bulma-project.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ee468be318.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
@@ -33,14 +34,22 @@
                 <div class="navbar-start">
                     <a href="home.html" class="navbar-item">Home</a>
                     <a href="produkt.html" class="navbar-item">Products</a>
-                    <a href="minesweeper.html" class="navbar-item">Minesweeper</a>
+                    <a href="clicker.html" class="navbar-item">Game</a>
                 </div>
             </div>
             <div class="navbar-end">
 
             </div>
         </nav>
+        <div class="grid">
+            <div class="cell box is-col-span-2 is-col-start-2 is-row-start-3">
+                <p class="has-text-right has-text-weight-bold is-size-4" id="score">Score: 0</p>
+                <img src="lorem.png" alt="loremBild" id="loremBild" onclick="Clicker()" class="image is-340x340 mgl-large">
+            </div>
+        </div>
     </div>
+
+    
     
 </body>
 </html>

@@ -10,7 +10,11 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="columns is-multiline">
+    <div class="columns is-multiline fixed-grid">
+        <div class="cell is-col-start-1">
+            <i class="fa-solid fa-moon fas fa-4x fa-pull-left p-5" id="måne" onclick="Togglem()"></i>
+            <i class="fa-solid fa-sun fas fa-4x fa-pull-left p-5" id="sol" onclick="Toggles()"></i>
+        </div>
         <form  class="formular-container column is-one-third" name="formular" id="formular" method="get" action="home.html">
             <label for="namn">Namn</label>
             <input type="text" id="namn" name="namn" class="input is-primary column"><br>
@@ -21,8 +25,6 @@
             <a href="home.html"><button id="button" class="button is-primary is-outlined is-large column">Skicka</button></a>
         </form> 
         
-        <i class="fa-solid fa-moon fas fa-4x fa-pull-left p-5" id="måne" onclick="Togglem()"></i>
-        <i class="fa-solid fa-sun fas fa-4x fa-pull-left p-5" id="sol" onclick="Toggles()"></i>
     </div>
 </body>
 </html>

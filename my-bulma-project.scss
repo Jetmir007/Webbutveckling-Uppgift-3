@@ -1,0 +1,10 @@
+$red: rgba(221, 27, 13, 0.862);
+
+// Path to Bulma's sass folder
+@use "bulma/sass" with (
+    $dimensions: 16 24 32 48 64 96 340,
+    $primary: $red,
+);
+
+// Import the Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
