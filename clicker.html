@@ -42,9 +42,23 @@
             </div>
         </nav>
         <div class="grid">
-            <div class="cell box is-col-span-2 is-col-start-2 is-row-start-3">
-                <p class="has-text-right has-text-weight-bold is-size-4" id="score">Score: 0</p>
+            <div class="cell box is-col-span-2 is-col-start-1 is-row-start-3">
+                <p class="has-text-right title" id="score">Score: 0</p>
+                <p id="s/c" class="subtitle has-text-right mt-3">Score/Click: 1</p>
                 <img src="lorem.png" alt="loremBild" id="loremBild" onclick="Clicker()" class="image is-340x340 mgl-large">
+            </div>
+            <div class="cell box is-col-start-3 is-row-start-3">
+                <p class="title">Store</p>
+                <div class="is-flex">
+                    <p class="subtitle mt-5">+1 Score/click </p>
+                    <div class="button ml-5 mt-5 mb-5" id="add" onclick="AddScore()">10 Score</div>
+                    <div class="button ml-5 mt-5 mb-5" onclick="AddScore10()" id="add10">100 Score</div>
+                </div>
+                <div class="is-flex">
+                    <p class="subtitle mt-5">+0.1 Multiplier</p>
+                    <div class="button ml-5 mt-5 mb-5" onclick="Multiplier()" id="mult">100 Score</div>
+                    <div class="button ml-5 mt-5 mb-5" onclick="Multiplier10()" id="mult10">1000 Score</div>
+                </div>
             </div>
         </div>
     </div>
